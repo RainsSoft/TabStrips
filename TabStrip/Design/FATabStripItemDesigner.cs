@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace FarsiLibrary.Win.Design
 {
-    public class FATabStripItemDesigner : ParentControlDesigner
+    public class FATabStripItemDesigner : ParentControlDesigner //System.Design.dll
     {
         #region Fields
 

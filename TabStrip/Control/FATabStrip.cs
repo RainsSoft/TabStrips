@@ -328,6 +328,7 @@ namespace FarsiLibrary.Win
                 DEF_START_POS = stripButtonRect.Right;
             }
 
+            // draw border: left, top, right, bottom of tab control
             e.Graphics.DrawRectangle(SystemPens.ControlDark, borderRc);
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
@@ -356,15 +357,15 @@ namespace FarsiLibrary.Win
             {
                 if (Items.DrawnCount == 0 || Items.VisibleCount == 0)
                 {
-                    e.Graphics.DrawLine(SystemPens.ControlDark, new Point(0, DEF_HEADER_HEIGHT),
-                                        new Point(ClientRectangle.Width, DEF_HEADER_HEIGHT));
+                    e.Graphics.DrawLine(SystemPens.ControlDark, new Point(0, DEF_HEADER_HEIGHT), new Point(ClientRectangle.Width, DEF_HEADER_HEIGHT));
                 }
                 else if (SelectedItem != null && SelectedItem.IsDrawn)
                 {
                     Point end = new Point((int)SelectedItem.StripRect.Left - 9, DEF_HEADER_HEIGHT);
-                    e.Graphics.DrawLine(SystemPens.ControlDark, new Point(0, DEF_HEADER_HEIGHT), end);
                     end.X += (int)SelectedItem.StripRect.Width + 10;
-                    e.Graphics.DrawLine(SystemPens.ControlDark, end, new Point(ClientRectangle.Width, DEF_HEADER_HEIGHT));
+                    //??????????????????????????????????????????????
+                    ///e.Graphics.DrawLine(SystemPens.ControlDark, end, new Point(ClientRectangle.Width, DEF_HEADER_HEIGHT));
+                    e.Graphics.DrawLine(SystemPens.ControlDark, new Point(end.X + 3, end.Y), new Point(ClientRectangle.Width - 3, DEF_HEADER_HEIGHT));
                 }
             }
             else
@@ -582,29 +583,32 @@ namespace FarsiLibrary.Win
             {
                 if (currentItem == SelectedItem || isFirstTab)
                 {
-                    path.AddLine(buttonRect.Left - 10, buttonRect.Bottom - 1,
-                                 buttonRect.Left + (buttonRect.Height/2) - 4, mtop + 4);
+                    //??????????????????????????????????????????????
+                    //path.AddLine(buttonRect.Left - 10, buttonRect.Bottom - 1, buttonRect.Left + (buttonRect.Height / 2) - 4, mtop + 4);
+                    path.AddLine(buttonRect.Left - 9, buttonRect.Bottom - 1, buttonRect.Left + (buttonRect.Height / 2) - 3, mtop + 4);
                 }
                 else
                 {
-                    path.AddLine(buttonRect.Left, buttonRect.Bottom - 1, buttonRect.Left,
-                                 buttonRect.Bottom - (buttonRect.Height/2) - 2);
-                    path.AddLine(buttonRect.Left, buttonRect.Bottom - (buttonRect.Height/2) - 3,
-                                 buttonRect.Left + (buttonRect.Height/2) - 4, mtop + 3);
+                    path.AddLine(buttonRect.Left, buttonRect.Bottom - 1, buttonRect.Left, buttonRect.Bottom - (buttonRect.Height/2) - 2);
+                    path.AddLine(buttonRect.Left, buttonRect.Bottom - (buttonRect.Height/2) - 3, buttonRect.Left + (buttonRect.Height/2) - 4, mtop + 3);
                 }
 
-                path.AddLine(buttonRect.Left + (buttonRect.Height/2) + 2, mtop, buttonRect.Right - 3, mtop);
+                path.AddLine(buttonRect.Left + (buttonRect.Height / 2) + 2, mtop, buttonRect.Right - 3, mtop);
                 path.AddLine(buttonRect.Right, mtop + 2, buttonRect.Right, buttonRect.Bottom - 1);
                 path.AddLine(buttonRect.Right - 4, buttonRect.Bottom - 1, buttonRect.Left, buttonRect.Bottom - 1);
                 path.CloseFigure();
 
                 if (currentItem == SelectedItem)
                 {
-                    brush = new LinearGradientBrush(buttonRect, SystemColors.ControlLightLight, SystemColors.Window, LinearGradientMode.Vertical);
+                    //??????????????????????????????????????????????
+                    //brush = new LinearGradientBrush(buttonRect, SystemColors.ControlLightLight, SystemColors.Window, LinearGradientMode.Vertical);
+                    brush = new LinearGradientBrush(buttonRect, _CONST.TAB_ACTIVE_TITLE_BACKGROUND_1, _CONST.TAB_ACTIVE_TITLE_BACKGROUND_2, LinearGradientMode.Vertical);
                 }
                 else
                 {
+                    //??????????????????????????????????????????????
                     brush = new LinearGradientBrush(buttonRect, SystemColors.ControlLightLight, SystemColors.Control, LinearGradientMode.Vertical);
+                    //brush = new LinearGradientBrush(buttonRect, Color.WhiteSmoke, Color.WhiteSmoke, LinearGradientMode.Horizontal);
                 }
 
                 g.FillPath(brush, path);
@@ -612,8 +616,7 @@ namespace FarsiLibrary.Win
 
                 if (currentItem == SelectedItem)
                 {
-                    g.DrawLine(new Pen(brush), buttonRect.Left - 9, buttonRect.Height + 2,
-                               buttonRect.Left + buttonRect.Width - 1, buttonRect.Height + 2);
+                    g.DrawLine(new Pen(brush), buttonRect.Left - 9, buttonRect.Height + 2, buttonRect.Left + buttonRect.Width - 1, buttonRect.Height + 2);
                 }
 
                 PointF textLoc = new PointF(buttonRect.Left + buttonRect.Height - 4, buttonRect.Top + (buttonRect.Height/2) - (textSize.Height/2) - 3);
