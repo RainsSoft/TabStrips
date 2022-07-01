@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabStrip", "TabStrip\TabStrip.csproj", "{F929CA6A-87BD-42C8-8D0A-6455DB6F55DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabStrip.Test", "TabStrip.Test\TabStrip.Test.csproj", "{19968F6D-DE2B-4FE7-AC5A-2C169CE7A9A6}"
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D22D08F-D258-4BAC-91E0-21234DCE19CB}
 	EndGlobalSection
 EndGlobal
