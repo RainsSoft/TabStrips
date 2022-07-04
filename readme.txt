@@ -7,3 +7,6 @@ Building a TabControl consists of building two controls: a TabControl itself, wh
 The Visual Studio TabControl slightly differs from a normal tab control, because it only shows as much TabPages as fits the width of the control. All the other TabPages are available via a context menu appearing by clicking the glyph icon. Selecting a TabPage from the menu brings it to position 0 of the TabPageCollection, so that it appears as the first TabPage.
 
 http://www.codeproject.com/Articles/13902/TabStrips-A-TabControl-in-the-Visual-Studio-2005-w
+
+PageControl:
+https://github.com/oozcitak/PagedControl
