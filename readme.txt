@@ -10,3 +10,5 @@ http://www.codeproject.com/Articles/13902/TabStrips-A-TabControl-in-the-Visual-S
 
 PageControl:
 https://github.com/oozcitak/PagedControl
+TabControl:
+https://github.com/oozcitak/TabControl
