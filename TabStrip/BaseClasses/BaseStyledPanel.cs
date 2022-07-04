@@ -1,13 +1,11 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
-namespace FarsiLibrary.Win.BaseClasses
-{
+namespace FarsiLibrary.Win.BaseClasses {
     [ToolboxItem(false)]
-    public class BaseStyledPanel : ContainerControl
-    {
+    public class BaseStyledPanel : ContainerControl {
         #region Fields
 
         private static ToolStripProfessionalRenderer renderer;
@@ -22,13 +20,11 @@ namespace FarsiLibrary.Win.BaseClasses
 
         #region Ctor
 
-        static BaseStyledPanel()
-        {
+        static BaseStyledPanel() {
             renderer = new ToolStripProfessionalRenderer();
         }
 
-        public BaseStyledPanel()
-        {
+        public BaseStyledPanel() {
             // Set painting style for better performance.
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
@@ -40,27 +36,22 @@ namespace FarsiLibrary.Win.BaseClasses
 
         #region Methods
 
-        protected override void OnSystemColorsChanged(EventArgs e)
-        {
+        protected override void OnSystemColorsChanged(EventArgs e) {
             base.OnSystemColorsChanged(e);
             UpdateRenderer();
             Invalidate();
         }
 
-        protected virtual void OnThemeChanged(EventArgs e)
-        {
-            if (ThemeChanged != null)
+        protected virtual void OnThemeChanged(EventArgs e) {
+            if(ThemeChanged != null)
                 ThemeChanged(this, e);
         }
 
-        private void UpdateRenderer()
-        {
-            if (!UseThemes)
-            {
+        private void UpdateRenderer() {
+            if(!UseThemes) {
                 renderer.ColorTable.UseSystemColors = true;
             }
-            else
-            {
+            else {
                 renderer.ColorTable.UseSystemColors = false;
             }
         }
@@ -70,17 +61,16 @@ namespace FarsiLibrary.Win.BaseClasses
         #region Props
 
         [Browsable(false)]
-        public ToolStripProfessionalRenderer ToolStripRenderer
-        {
-            get { return renderer; }
+        public ToolStripProfessionalRenderer ToolStripRenderer {
+            get {
+                return renderer;
+            }
         }
 
         [DefaultValue(true)]
         [Browsable(false)]
-        public bool UseThemes
-        {
-            get
-            {
+        public bool UseThemes {
+            get {
                 return VisualStyleRenderer.IsSupported && VisualStyleInformation.IsSupportedByOS && Application.RenderWithVisualStyles;
             }
         }

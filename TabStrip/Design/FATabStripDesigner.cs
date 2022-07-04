@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms.Design;
 using System.ComponentModel.Design;
 using System.Drawing;
@@ -6,10 +6,8 @@ using System.Collections;
 using System.Windows.Forms;
 using FarsiLibrary.Win;
 
-namespace FarsiLibrary.Win.Design
-{
-    public class FATabStripDesigner : ParentControlDesigner
-    {
+namespace FarsiLibrary.Win.Design {
+    public class FATabStripDesigner : ParentControlDesigner {
         #region Fields
 
         IComponentChangeService changeService;
@@ -18,10 +16,9 @@ namespace FarsiLibrary.Win.Design
 
         #region Initialize & Dispose
 
-        public override void Initialize(System.ComponentModel.IComponent component)
-        {
+        public override void Initialize(System.ComponentModel.IComponent component) {
             base.Initialize(component);
-            
+
             //Design services
             changeService = (IComponentChangeService)GetService(typeof(IComponentChangeService));
 
@@ -32,8 +29,7 @@ namespace FarsiLibrary.Win.Design
             Verbs.Add(new DesignerVerb("Remove TabStrip", new EventHandler(OnRemoveTabStrip)));
         }
 
-        protected override void Dispose(bool disposing)
-        {
+        protected override void Dispose(bool disposing) {
             changeService.ComponentRemoving -= new ComponentEventHandler(OnRemoving);
 
             base.Dispose(disposing);
@@ -43,16 +39,13 @@ namespace FarsiLibrary.Win.Design
 
         #region Private Methods
 
-        private void OnRemoving(object sender, ComponentEventArgs e)
-        {
-            IDesignerHost host = (IDesignerHost) GetService(typeof (IDesignerHost));
+        private void OnRemoving(object sender, ComponentEventArgs e) {
+            IDesignerHost host = (IDesignerHost)GetService(typeof(IDesignerHost));
 
             //Removing a button
-            if (e.Component is FATabStripItem)
-            {
+            if(e.Component is FATabStripItem) {
                 FATabStripItem itm = e.Component as FATabStripItem;
-                if (Control.Items.Contains(itm))
-                {
+                if(Control.Items.Contains(itm)) {
                     changeService.OnComponentChanging(Control, null);
                     Control.RemoveTab(itm);
                     changeService.OnComponentChanged(Control, null, null, null);
@@ -60,10 +53,8 @@ namespace FarsiLibrary.Win.Design
                 }
             }
 
-            if (e.Component is FATabStrip)
-            {
-                for (int i = Control.Items.Count - 1; i >= 0; i--)
-                {
+            if(e.Component is FATabStrip) {
+                for(int i = Control.Items.Count - 1; i >= 0; i--) {
                     FATabStripItem itm = Control.Items[i];
                     changeService.OnComponentChanging(Control, null);
                     Control.RemoveTab(itm);
@@ -73,8 +64,7 @@ namespace FarsiLibrary.Win.Design
             }
         }
 
-        private void OnAddTabStrip(object sender, EventArgs e)
-        {
+        private void OnAddTabStrip(object sender, EventArgs e) {
             IDesignerHost host = (IDesignerHost)GetService(typeof(IDesignerHost));
             DesignerTransaction transaction = host.CreateTransaction("Add TabStrip");
             FATabStripItem itm = (FATabStripItem)host.CreateComponent(typeof(FATabStripItem));
@@ -87,8 +77,7 @@ namespace FarsiLibrary.Win.Design
             transaction.Commit();
         }
 
-        private void OnRemoveTabStrip(object sender, EventArgs e)
-        {
+        private void OnRemoveTabStrip(object sender, EventArgs e) {
             IDesignerHost host = (IDesignerHost)GetService(typeof(IDesignerHost));
             DesignerTransaction transaction = host.CreateTransaction("Remove Button");
             changeService.OnComponentChanging(Control, null);
@@ -109,17 +98,15 @@ namespace FarsiLibrary.Win.Design
         /// </summary>
         /// <param name="point"></param>
         /// <returns></returns>
-        protected override bool GetHitTest(Point point)
-        {
+        protected override bool GetHitTest(Point point) {
             HitTestResult result = Control.HitTest(point);
             if(result == HitTestResult.CloseButton || result == HitTestResult.MenuGlyph)
                 return true;
-            
+
             return false;
         }
 
-        protected override void PreFilterProperties(IDictionary properties)
-        {
+        protected override void PreFilterProperties(IDictionary properties) {
             base.PreFilterProperties(properties);
 
             properties.Remove("DockPadding");
@@ -135,14 +122,11 @@ namespace FarsiLibrary.Win.Design
             properties.Remove("ImeMode");
         }
 
-        protected override void WndProc(ref Message msg)
-        {
-            if (msg.Msg == 0x201)
-            {
+        protected override void WndProc(ref Message msg) {
+            if(msg.Msg == 0x201) {
                 Point pt = Control.PointToClient(Cursor.Position);
                 FATabStripItem itm = Control.GetTabItemByPoint(pt);
-                if (itm != null)
-                {
+                if(itm != null) {
                     Control.SelectedItem = itm;
                     ArrayList selection = new ArrayList();
                     selection.Add(itm);
@@ -154,18 +138,14 @@ namespace FarsiLibrary.Win.Design
             base.WndProc(ref msg);
         }
 
-        public override ICollection AssociatedComponents
-        {
-            get
-            {
+        public override ICollection AssociatedComponents {
+            get {
                 return Control.Items;
             }
         }
 
-        public new virtual FATabStrip Control
-        {
-            get
-            {
+        public new virtual FATabStrip Control {
+            get {
                 return base.Control as FATabStrip;
             }
         }

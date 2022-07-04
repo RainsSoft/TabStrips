@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 
-namespace System
+namespace FarsiLibrary.Win
 {
     public class _CONST
     {
@@ -16,8 +16,9 @@ namespace System
         //public static Color TAB_ACTIVE_TOOLBAR_BACKGROUND = SystemColors.Window;
 
         public static Color TAB_ACTIVE_TITLE_BACKGROUND_1 = Color.White;
-        public static Color TAB_ACTIVE_TITLE_BACKGROUND_2 = Color.White;
-        public static Color TAB_ACTIVE_TOOLBAR_BACKGROUND = Color.White;
-        public static Color TAB_ACTIVE_BORDER_COLOR = Color.Gray; 
+        public static Color TAB_ACTIVE_TITLE_BACKGROUND_2 = Color.LightSkyBlue;
+        public static Color TAB_ACTIVE_TOOLBAR_BACKGROUND = SystemColors.Control;//Color.Red;
+        public static Color TAB_ACTIVE_BORDER_COLOR = Color.FromArgb(127, 157, 185);// Color.Gray;//, Color.FromArgb(164, 185, 127), Color.FromArgb(165, 172, 178), Color.FromArgb(132, 130, 132)
+
     }
 }

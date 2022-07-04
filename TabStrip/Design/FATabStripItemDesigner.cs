@@ -1,14 +1,12 @@
-using System.Windows.Forms.Design;
+﻿using System.Windows.Forms.Design;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace FarsiLibrary.Win.Design
-{
-    public class FATabStripItemDesigner : ParentControlDesigner //System.Design.dll
-    {
+namespace FarsiLibrary.Win.Design {
+    public class FATabStripItemDesigner : ParentControlDesigner {
         #region Fields
 
         FATabStripItem TabStrip;
@@ -17,8 +15,7 @@ namespace FarsiLibrary.Win.Design
 
         #region Init & Dispose
 
-        public override void Initialize(IComponent component)
-        {
+        public override void Initialize(IComponent component) {
             base.Initialize(component);
             TabStrip = component as FATabStripItem;
         }
@@ -27,8 +24,7 @@ namespace FarsiLibrary.Win.Design
 
         #region Overrides
 
-        protected override void PreFilterProperties(System.Collections.IDictionary properties)
-        {
+        protected override void PreFilterProperties(System.Collections.IDictionary properties) {
             base.PreFilterProperties(properties);
 
             properties.Remove("Dock");
@@ -55,25 +51,19 @@ namespace FarsiLibrary.Win.Design
             properties.Remove("Location");
         }
 
-        public override SelectionRules SelectionRules
-        {
-            get
-            {
+        public override SelectionRules SelectionRules {
+            get {
                 return 0;
             }
         }
 
-        public override bool CanBeParentedTo(IDesigner parentDesigner)
-        {
+        public override bool CanBeParentedTo(IDesigner parentDesigner) {
             return (parentDesigner.Component is FATabStrip);
         }
 
-        protected override void OnPaintAdornments(PaintEventArgs pe)
-        {
-            if (TabStrip != null)
-            {
-                using (Pen p = new Pen(SystemColors.ControlDark))
-                {
+        protected override void OnPaintAdornments(PaintEventArgs pe) {
+            if(TabStrip != null) {
+                using(Pen p = new Pen(SystemColors.ControlDark)) {
                     p.DashStyle = DashStyle.Dash;
                     pe.Graphics.DrawRectangle(p, 0, 0, TabStrip.Width - 1, TabStrip.Height - 1);
                 }
