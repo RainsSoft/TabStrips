@@ -1,11 +1,9 @@
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace FarsiLibrary.Win
-{
-    internal class FATabStripMenuGlyph
-    {
+namespace FarsiLibrary.Win {
+    internal class FATabStripMenuGlyph {
         #region Fields
 
         private Rectangle glyphRect = Rectangle.Empty;
@@ -16,24 +14,32 @@ namespace FarsiLibrary.Win
 
         #region Props
 
-        public bool IsMouseOver
-        {
-            get { return isMouseOver; }
-            set { isMouseOver = value; }
+        public bool IsMouseOver {
+            get {
+                return isMouseOver;
+            }
+            internal set {
+                isMouseOver = value;
+            }
         }
-
-        public Rectangle Bounds
-        {
-            get { return glyphRect; }
-            set { glyphRect = value; }
+        public bool IsVisible {
+            get;
+            internal set;
+        }
+        public Rectangle Bounds {
+            get {
+                return glyphRect;
+            }
+            set {
+                glyphRect = value;
+            }
         }
 
         #endregion
 
         #region Ctor
 
-        internal FATabStripMenuGlyph(ToolStripProfessionalRenderer renderer)
-        {
+        internal FATabStripMenuGlyph(ToolStripProfessionalRenderer renderer) {
             this.renderer = renderer;
         }
 
@@ -41,12 +47,12 @@ namespace FarsiLibrary.Win
 
         #region Methods
 
-        public void DrawGlyph(Graphics g)
-        {
-            if (isMouseOver)
-            {
+        public void DrawGlyph(Graphics g) {
+            if(isMouseOver) {
                 Color fill = renderer.ColorTable.ButtonSelectedHighlight; //Color.FromArgb(35, SystemColors.Highlight);
-                g.FillRectangle(new SolidBrush(fill), glyphRect);
+                using(SolidBrush sbfill = new SolidBrush(fill)) {
+                    g.FillRectangle(sbfill, glyphRect);
+                }
                 Rectangle borderRect = glyphRect;
 
                 borderRect.Width--;
@@ -54,13 +60,24 @@ namespace FarsiLibrary.Win
 
                 g.DrawRectangle(SystemPens.Highlight, borderRect);
             }
+            else {
+                //绘制背景
+                Color fill = _CONST.TAB_ACTIVE_TOOLBAR_BACKGROUND;//renderer.ColorTable.OverflowButtonGradientMiddle; //Color.FromArgb(35, SystemColors.Highlight);
+                using(SolidBrush sbfill = new SolidBrush(fill)) {
+                    g.FillRectangle(sbfill, glyphRect);
+                }
+                Rectangle borderRect = glyphRect;
 
+                borderRect.Width--;
+                borderRect.Height--;
+
+                g.DrawRectangle(SystemPens.Highlight, borderRect);
+            }
             SmoothingMode bak = g.SmoothingMode;
 
             g.SmoothingMode = SmoothingMode.Default;
 
-            using (Pen pen = new Pen(Color.Black))
-            {
+            using(Pen pen = new Pen(Color.Black)) {
                 pen.Width = 2;
 
                 g.DrawLine(pen, new Point(glyphRect.Left + (glyphRect.Width / 3) - 2, glyphRect.Height / 2 - 1),

@@ -1,10 +1,8 @@
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace FarsiLibrary.Win
-{
-    internal class FATabStripCloseButton
-    {
+namespace FarsiLibrary.Win {
+    internal class FATabStripCloseButton {
         #region Fields
 
         private Rectangle crossRect = Rectangle.Empty;
@@ -15,24 +13,32 @@ namespace FarsiLibrary.Win
 
         #region Props
 
-        public bool IsMouseOver
-        {
-            get { return isMouseOver; }
-            set { isMouseOver = value; }
+        public bool IsMouseOver {
+            get {
+                return isMouseOver;
+            }
+            internal set {
+                isMouseOver = value;
+            }
         }
-
-        public Rectangle Bounds
-        {
-            get { return crossRect; }
-            set { crossRect = value; }
+        public bool IsVisible {
+            get;
+            internal set;
+        }
+        public Rectangle Bounds {
+            get {
+                return crossRect;
+            }
+            set {
+                crossRect = value;
+            }
         }
 
         #endregion
 
         #region Ctor
 
-        internal FATabStripCloseButton(ToolStripProfessionalRenderer renderer)
-        {
+        internal FATabStripCloseButton(ToolStripProfessionalRenderer renderer) {
             this.renderer = renderer;
         }
 
@@ -40,13 +46,25 @@ namespace FarsiLibrary.Win
 
         #region Methods
 
-        public void DrawCross(Graphics g)
-        {
-            if (isMouseOver)
-            {
+        public void DrawCross(Graphics g) {
+            if(isMouseOver) {
                 Color fill = renderer.ColorTable.ButtonSelectedHighlight;
+                using(SolidBrush sbfill = new SolidBrush(fill)) {
+                    g.FillRectangle(sbfill, crossRect);
+                }
+                Rectangle borderRect = crossRect;
 
-                g.FillRectangle(new SolidBrush(fill), crossRect);
+                borderRect.Width--;
+                borderRect.Height--;
+
+                g.DrawRectangle(SystemPens.Highlight, borderRect);
+            }
+            else {
+                //绘制背景
+                Color fill = _CONST.TAB_ACTIVE_TOOLBAR_BACKGROUND; //renderer.ColorTable.OverflowButtonGradientMiddle;
+                using(SolidBrush sbfill = new SolidBrush(fill)) {
+                    g.FillRectangle(sbfill, crossRect);
+                }
 
                 Rectangle borderRect = crossRect;
 
@@ -56,8 +74,7 @@ namespace FarsiLibrary.Win
                 g.DrawRectangle(SystemPens.Highlight, borderRect);
             }
 
-            using (Pen pen = new Pen(Color.Black, 1.6f))
-            {
+            using(Pen pen = new Pen(Color.Black, 1.6f)) {
                 g.DrawLine(pen, crossRect.Left + 3, crossRect.Top + 3,
                     crossRect.Right - 5, crossRect.Bottom - 4);
 
