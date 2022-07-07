@@ -12,3 +12,5 @@ PageControl:
 https://github.com/oozcitak/PagedControl
 TabControl:
 https://github.com/oozcitak/TabControl
+
+TabStrips 原始控件库很久没有更新了，这里是为了适应自己的项目做了一些改进与美化
