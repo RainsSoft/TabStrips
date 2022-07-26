@@ -1,4 +1,4 @@
-TabStrips: A TabControl in the Visual Studio 2005 way!
+﻿TabStrips: A TabControl in the Visual Studio 2005 way!
 
 Besides all the new features of Visual Studio, there is a distinct TabControl with a new style like no other. The code here tries to build up a control which behaves like the tab pages of VS.NET 2005.
 
@@ -13,4 +13,9 @@ https://github.com/oozcitak/PagedControl
 TabControl:
 https://github.com/oozcitak/TabControl
 
+CustomTab:
+This project is just a modified version of Painting Your Own Tabs - Second Edition made by The Man from U.N.C.L.E.
+https://www.codeproject.com/Articles/91387/Painting-Your-Own-Tabs-Second-Edition-2
+
+By no means am I the creator of this source code.
 TabStrips 原始控件库很久没有更新了，这里是为了适应自己的项目做了一些改进与美化
