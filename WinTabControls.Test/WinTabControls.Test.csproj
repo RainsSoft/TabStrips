@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8B9CE33-8134-4CCF-9549-F8F4D884EACB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinTabControls.Test</RootNamespace>
+    <AssemblyName>WinTabControls.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagedControlTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PagedControl_TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagedControl_TestForm.Designer.cs">
+      <DependentUpon>PagedControl_TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControl_TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabControl_TestForm.Designer.cs">
+      <DependentUpon>TabControl_TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardControl_TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizardControl_TestForm.Designer.cs">
+      <DependentUpon>WizardControl_TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardControlTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PagedControl_TestForm.resx">
+      <DependentUpon>PagedControl_TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControl_TestForm.resx">
+      <DependentUpon>TabControl_TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardControl_TestForm.resx">
+      <DependentUpon>WizardControl_TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinTabControls\WinTabControls.csproj">
+      <Project>{0b83cd89-a10f-4a69-ab6a-682f47323857}</Project>
+      <Name>WinTabControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="brick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bricks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clock.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
