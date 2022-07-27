@@ -12,7 +12,7 @@ namespace TabStrip.Test
         
         public void AddNewTabPage()
         {
-            faTabStrip1.AddTab(new FATabStripItem(string.Format("New Document {0}", faTabStrip1.Items.Count + 1), null));
+            faTabStrip1.AddTab(new FATabStripItem(string.Format("Doc{0}", faTabStrip1.Items.Count + 1), null));
         }
         
         public void RemoveLastTab()

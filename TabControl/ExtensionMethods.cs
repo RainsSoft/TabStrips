@@ -5,11 +5,13 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 
-namespace Manina.Windows.Forms {
+namespace Manina.Windows.Forms
+{
     /// <summary>
     /// Contains extension methods used in the assembly.
     /// </summary>
-    internal static class ExtensionMethods {
+    internal static class ExtensionMethods
+    {
         #region Rectangle
         public static Point GetBottomLeft(this Rectangle r) {
             return new Point(r.Left, r.Bottom);
@@ -58,10 +60,10 @@ namespace Manina.Windows.Forms {
         public static Rectangle GetRotated(this Rectangle rec, Rectangle fitInside, TextDirection direction) {
             var rotatedRec = rec;
 
-            if(direction == TextDirection.Down) {
+            if (direction == TextDirection.Down) {
                 rotatedRec = new Rectangle(fitInside.Width - rec.Height - rec.Top, rec.Left, rec.Height, rec.Width);
             }
-            else if(direction == TextDirection.Up) {
+            else if (direction == TextDirection.Up) {
                 rotatedRec = new Rectangle(rec.Top, fitInside.Height - rec.Width - rec.Left, rec.Height, rec.Width);
             }
 
@@ -113,13 +115,13 @@ namespace Manina.Windows.Forms {
         }
 
         public static void DrawVerticalTextDown(this Graphics g, string text, Font font, Rectangle bounds, Color foreColor, Color backColor, TextFormatFlags flags) {
-            if(bounds.Height <= 0 || bounds.Width <= 0)
+            if (bounds.Height <= 0 || bounds.Width <= 0)
                 return;
 
             var imageBounds = new Rectangle(0, 0, bounds.Height, bounds.Width);
 
-            using(var image = new Bitmap(imageBounds.Width, imageBounds.Height, PixelFormat.Format32bppArgb))
-            using(Graphics imageGraphics = Graphics.FromImage(image)) {
+            using (var image = new Bitmap(imageBounds.Width, imageBounds.Height, PixelFormat.Format32bppArgb))
+            using (Graphics imageGraphics = Graphics.FromImage(image)) {
                 TextRenderer.DrawText(imageGraphics, text, font, imageBounds, foreColor, backColor, flags);
                 // Rotate, translate and draw the image
                 Point[] ptMap = new Point[] {
@@ -132,13 +134,13 @@ namespace Manina.Windows.Forms {
         }
 
         public static void DrawVerticalTextUp(this Graphics g, string text, Font font, Rectangle bounds, Color foreColor, Color backColor, TextFormatFlags flags) {
-            if(bounds.Height <= 0 || bounds.Width <= 0)
+            if (bounds.Height <= 0 || bounds.Width <= 0)
                 return;
 
             var imageBounds = new Rectangle(0, 0, bounds.Height, bounds.Width);
 
-            using(var image = new Bitmap(imageBounds.Width, imageBounds.Height, PixelFormat.Format32bppArgb))
-            using(Graphics imageGraphics = Graphics.FromImage(image)) {
+            using (var image = new Bitmap(imageBounds.Width, imageBounds.Height, PixelFormat.Format32bppArgb))
+            using (Graphics imageGraphics = Graphics.FromImage(image)) {
                 TextRenderer.DrawText(imageGraphics, text, font, imageBounds, foreColor, backColor, flags);
                 // Rotate, translate and draw the image
                 Point[] ptMap = new Point[] {
@@ -203,17 +205,17 @@ namespace Manina.Windows.Forms {
         }
 
         private static float HueToRgb(float m1, float m2, float h) {
-            if(h < 0f)
+            if (h < 0f)
                 h = h + 1f;
-            if(h > 1f)
+            if (h > 1f)
                 h = h - 1f;
 
 
-            if(h * 6f < 1f)
+            if (h * 6f < 1f)
                 return m1 + (m2 - m1) * h * 6f;
-            else if(h * 2f < 1f)
+            else if (h * 2f < 1f)
                 return m2;
-            else if(h * 3f < 2f)
+            else if (h * 3f < 2f)
                 return m1 + (m2 - m1) * (2f / 3f - h) * 6f;
             else
                 return m1;
@@ -226,7 +228,7 @@ namespace Manina.Windows.Forms {
 
         public static IEnumerable<TResult> OfType<TResult>(
             this IEnumerable source) {
-            if(source == null)
+            if (source == null)
                 throw new ArgumentNullException("source");
 
             return OfTypeYield<TResult>(source);
@@ -234,8 +236,8 @@ namespace Manina.Windows.Forms {
 
         private static IEnumerable<TResult> OfTypeYield<TResult>(
             IEnumerable source) {
-            foreach(var item in source)
-                if(item is TResult)
+            foreach (var item in source)
+                if (item is TResult)
                     yield return (TResult)item;
         }
         /// <summary>
@@ -245,7 +247,7 @@ namespace Manina.Windows.Forms {
         public static IEnumerable<TResult> Select<TSource, TResult>(
             this IEnumerable<TSource> source,
             Func<TSource, TResult> selector) {
-            if(selector == null)
+            if (selector == null)
                 throw new ArgumentNullException("selector");
 
             return source.Select((item, i) => selector(item));
@@ -258,9 +260,9 @@ namespace Manina.Windows.Forms {
         public static IEnumerable<TResult> Select<TSource, TResult>(
             this IEnumerable<TSource> source,
             Func<TSource, int, TResult> selector) {
-            if(source == null)
+            if (source == null)
                 throw new ArgumentNullException("source");
-            if(selector == null)
+            if (selector == null)
                 throw new ArgumentNullException("selector");
 
             return SelectYield(source, selector);
@@ -269,7 +271,7 @@ namespace Manina.Windows.Forms {
          IEnumerable<TSource> source,
          Func<TSource, int, TResult> selector) {
             var i = 0;
-            foreach(var item in source)
+            foreach (var item in source)
                 yield return selector(item, i++);
         }
         /// <summary>
@@ -285,7 +287,7 @@ namespace Manina.Windows.Forms {
 
         public static List<TSource> ToList<TSource>(
             this IEnumerable<TSource> source) {
-            if(source == null)
+            if (source == null)
                 throw new ArgumentNullException("source");
 
             return new List<TSource>(source);
@@ -307,11 +309,11 @@ namespace Manina.Windows.Forms {
 
         public static int Sum(
             this IEnumerable<int> source) {
-            if(source == null)
+            if (source == null)
                 throw new ArgumentNullException("source");
 
             int sum = 0;
-            foreach(var num in source)
+            foreach (var num in source)
                 sum = checked(sum + num);
 
             return sum;
@@ -327,10 +329,20 @@ namespace Manina.Windows.Forms {
 }
 
 
-namespace System.Runtime.CompilerServices {
-    public class ExtensionAttribute : Attribute {
+namespace System.Runtime.CompilerServices
+{
+    public class ExtensionAttribute : Attribute
+    {
     }
 }
-namespace System.Linq {
+namespace System.Linq
+{
+
+}
+namespace Manina.Windows.Forms.Properties
+{
+}
+namespace WinTabControls.Properties
+{
 
 }

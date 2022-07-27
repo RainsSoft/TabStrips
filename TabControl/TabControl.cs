@@ -4,7 +4,8 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Linq;
 using System.Windows.Forms;
-
+using Manina.Windows.Forms.Properties;
+using WinTabControls.Properties;
 namespace Manina.Windows.Forms {
     [ToolboxBitmap(typeof(TabControl))]
     [Designer(typeof(TabControlDesigner))]
@@ -630,12 +631,12 @@ namespace Manina.Windows.Forms {
         /// Initializes a new instance of the <see cref="TabControl"/> class.
         /// </summary>
         public TabControl() {
-            defaultCloseImage = Properties.Resources.CloseImage;
+            defaultCloseImage = Resources.CloseImage;
 
-            defaultLeftArrowImage = Properties.Resources.LeftArrow;
-            defaultRightArrowImage = Properties.Resources.RightArrow;
-            defaultUpArrowImage = Properties.Resources.UpArrow;
-            defaultDownArrowImage = Properties.Resources.DownArrow;
+            defaultLeftArrowImage = Resources.LeftArrow;
+            defaultRightArrowImage = Resources.RightArrow;
+            defaultUpArrowImage = Resources.UpArrow;
+            defaultDownArrowImage = Resources.DownArrow;
 
             Tabs = new TabCollection(this);
             renderer = new TabControlRenderer(this);
