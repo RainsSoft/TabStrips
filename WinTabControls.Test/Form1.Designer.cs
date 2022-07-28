@@ -26,12 +26,24 @@ namespace WinTabControls.Test
         /// 使用代码编辑器修改此方法的内容。
         /// </summary>
         private void InitializeComponent() {
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.tabControl3 = new Manina.Windows.Forms.TabControl();
+            this.tab10 = new Manina.Windows.Forms.Tab();
+            this.tab11 = new Manina.Windows.Forms.Tab();
             this.faTabStrip1 = new FarsiLibrary.Win.FATabStrip();
             this.faTabStripItem1 = new FarsiLibrary.Win.FATabStripItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.faTabStripItem2 = new FarsiLibrary.Win.FATabStripItem();
             this.faTabStripItem3 = new FarsiLibrary.Win.FATabStripItem();
             this.faTabStripItem4 = new FarsiLibrary.Win.FATabStripItem();
             this.faTabStripItem5 = new FarsiLibrary.Win.FATabStripItem();
+            this.wizardControl1 = new Manina.Windows.Forms.WizardControl();
+            this.page5 = new Manina.Windows.Forms.Page();
+            this.page6 = new Manina.Windows.Forms.Page();
+            this.tabControl2 = new Manina.Windows.Forms.TabControl();
+            this.tab8 = new Manina.Windows.Forms.Tab();
+            this.tab9 = new Manina.Windows.Forms.Tab();
             this.tabControl1 = new Manina.Windows.Forms.TabControl();
             this.tab1 = new Manina.Windows.Forms.Tab();
             this.tab2 = new Manina.Windows.Forms.Tab();
@@ -40,54 +52,33 @@ namespace WinTabControls.Test
             this.tab5 = new Manina.Windows.Forms.Tab();
             this.tab6 = new Manina.Windows.Forms.Tab();
             this.tab7 = new Manina.Windows.Forms.Tab();
+            this.customTabControl7 = new System.Windows.Forms.CustomTabControl();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
             this.customTabControl1 = new System.Windows.Forms.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.wizardControl1 = new Manina.Windows.Forms.WizardControl();
-            this.page5 = new Manina.Windows.Forms.Page();
-            this.page6 = new Manina.Windows.Forms.Page();
+            this.customTabControl6 = new System.Windows.Forms.CustomTabControl();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.customTabControl4 = new System.Windows.Forms.CustomTabControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.customTabControl2 = new System.Windows.Forms.CustomTabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.customTabControl3 = new System.Windows.Forms.CustomTabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.customTabControl4 = new System.Windows.Forms.CustomTabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.customTabControl5 = new System.Windows.Forms.CustomTabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.customTabControl6 = new System.Windows.Forms.CustomTabControl();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.tabControl2 = new Manina.Windows.Forms.TabControl();
-            this.tab8 = new Manina.Windows.Forms.Tab();
-            this.tab9 = new Manina.Windows.Forms.Tab();
-            this.customTabControl7 = new System.Windows.Forms.CustomTabControl();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
             this.page7 = new Manina.Windows.Forms.Page();
             this.page8 = new Manina.Windows.Forms.Page();
             this.page9 = new Manina.Windows.Forms.Page();
             this.page10 = new Manina.Windows.Forms.Page();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabControl3 = new Manina.Windows.Forms.TabControl();
-            this.tab10 = new Manina.Windows.Forms.Tab();
-            this.tab11 = new Manina.Windows.Forms.Tab();
-            ((System.ComponentModel.ISupportInitialize)(this.faTabStrip1)).BeginInit();
-            this.faTabStrip1.SuspendLayout();
-            this.faTabStripItem1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.customTabControl1.SuspendLayout();
-            this.wizardControl1.SuspendLayout();
-            this.customTabControl2.SuspendLayout();
-            this.customTabControl3.SuspendLayout();
-            this.customTabControl4.SuspendLayout();
-            this.customTabControl5.SuspendLayout();
-            this.customTabControl6.SuspendLayout();
+            this.page1 = new Manina.Windows.Forms.Page();
+            this.page2 = new Manina.Windows.Forms.Page();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -96,11 +87,92 @@ namespace WinTabControls.Test
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.customTabControl7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.faTabStrip1)).BeginInit();
+            this.faTabStrip1.SuspendLayout();
+            this.faTabStripItem1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.wizardControl1.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.customTabControl7.SuspendLayout();
+            this.customTabControl1.SuspendLayout();
+            this.customTabControl6.SuspendLayout();
+            this.customTabControl4.SuspendLayout();
+            this.customTabControl2.SuspendLayout();
+            this.customTabControl3.SuspendLayout();
+            this.customTabControl5.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.AutoScroll = true;
+            this.splitContainer1.Panel1.Controls.Add(this.tabControl3);
+            this.splitContainer1.Panel1.Controls.Add(this.faTabStrip1);
+            this.splitContainer1.Panel1.Controls.Add(this.wizardControl1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
+            this.splitContainer1.Size = new System.Drawing.Size(1008, 730);
+            this.splitContainer1.SplitterDistance = 220;
+            this.splitContainer1.TabIndex = 10;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.AutoScroll = true;
+            this.splitContainer2.Panel1.Controls.Add(this.tabControl2);
+            this.splitContainer2.Panel1.Controls.Add(this.tabControl1);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.AutoScroll = true;
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl7);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl1);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl6);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl4);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl2);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl3);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl5);
+            this.splitContainer2.Size = new System.Drawing.Size(1008, 506);
+            this.splitContainer2.SplitterDistance = 319;
+            this.splitContainer2.TabIndex = 0;
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tab10);
+            this.tabControl3.Controls.Add(this.tab11);
+            this.tabControl3.Location = new System.Drawing.Point(383, 5);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.Size = new System.Drawing.Size(300, 198);
+            this.tabControl3.TabIndex = 5;
+            // 
+            // tab10
+            // 
+            this.tab10.Location = new System.Drawing.Point(1, 20);
+            this.tab10.Name = "tab10";
+            this.tab10.Size = new System.Drawing.Size(298, 177);
+            this.tab10.Text = "tab10";
+            // 
+            // tab11
+            // 
+            this.tab11.Location = new System.Drawing.Point(1, 20);
+            this.tab11.Name = "tab11";
+            this.tab11.Size = new System.Drawing.Size(298, 177);
+            this.tab11.Text = "tab11";
             // 
             // faTabStrip1
             // 
@@ -128,6 +200,15 @@ namespace WinTabControls.Test
             this.faTabStripItem1.Size = new System.Drawing.Size(348, 174);
             this.faTabStripItem1.TabIndex = 0;
             this.faTabStripItem1.Title = "TabStrip Page 1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinTabControls.Test.Properties.Resources.clock;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // faTabStripItem2
             // 
@@ -158,6 +239,55 @@ namespace WinTabControls.Test
             this.faTabStripItem5.Size = new System.Drawing.Size(348, 174);
             this.faTabStripItem5.TabIndex = 4;
             this.faTabStripItem5.Title = "TabStrip Page 5";
+            // 
+            // wizardControl1
+            // 
+            this.wizardControl1.Controls.Add(this.page5);
+            this.wizardControl1.Controls.Add(this.page6);
+            this.wizardControl1.Controls.Add(this.page1);
+            this.wizardControl1.Controls.Add(this.page2);
+            this.wizardControl1.Location = new System.Drawing.Point(698, 3);
+            this.wizardControl1.Name = "wizardControl1";
+            this.wizardControl1.Size = new System.Drawing.Size(300, 200);
+            this.wizardControl1.TabIndex = 4;
+            // 
+            // page5
+            // 
+            this.page5.Location = new System.Drawing.Point(1, 1);
+            this.page5.Name = "page5";
+            this.page5.Size = new System.Drawing.Size(298, 148);
+            this.page5.Text = "Page 1";
+            // 
+            // page6
+            // 
+            this.page6.Location = new System.Drawing.Point(1, 1);
+            this.page6.Name = "page6";
+            this.page6.Size = new System.Drawing.Size(298, 148);
+            this.page6.Text = "Page 2";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tab8);
+            this.tabControl2.Controls.Add(this.tab9);
+            this.tabControl2.Location = new System.Drawing.Point(3, 259);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.Size = new System.Drawing.Size(300, 200);
+            this.tabControl2.TabIndex = 3;
+            this.tabControl2.TabLocation = ((Manina.Windows.Forms.TabLocation)((Manina.Windows.Forms.TabLocation.Far | Manina.Windows.Forms.TabLocation.Bottom)));
+            // 
+            // tab8
+            // 
+            this.tab8.Location = new System.Drawing.Point(1, 1);
+            this.tab8.Name = "tab8";
+            this.tab8.Size = new System.Drawing.Size(298, 179);
+            this.tab8.Text = "tab8";
+            // 
+            // tab9
+            // 
+            this.tab9.Location = new System.Drawing.Point(1, 20);
+            this.tab9.Name = "tab9";
+            this.tab9.Size = new System.Drawing.Size(298, 179);
+            this.tab9.Text = "tab9";
             // 
             // tabControl1
             // 
@@ -223,6 +353,56 @@ namespace WinTabControls.Test
             this.tab7.Size = new System.Drawing.Size(262, 198);
             this.tab7.Text = "tab7";
             // 
+            // customTabControl7
+            // 
+            this.customTabControl7.Controls.Add(this.tabPage13);
+            this.customTabControl7.Controls.Add(this.tabPage14);
+            this.customTabControl7.DisplayStyle = System.Windows.Forms.TabStyle.VS2010;
+            // 
+            // 
+            // 
+            this.customTabControl7.DisplayStyleProvider.BorderColor = System.Drawing.Color.Transparent;
+            this.customTabControl7.DisplayStyleProvider.BorderColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.customTabControl7.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
+            this.customTabControl7.DisplayStyleProvider.CloserColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(99)))), ((int)(((byte)(61)))));
+            this.customTabControl7.DisplayStyleProvider.FocusTrack = false;
+            this.customTabControl7.DisplayStyleProvider.HotTrack = true;
+            this.customTabControl7.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customTabControl7.DisplayStyleProvider.Opacity = 1F;
+            this.customTabControl7.DisplayStyleProvider.Overlap = 0;
+            this.customTabControl7.DisplayStyleProvider.Padding = new System.Drawing.Point(6, 5);
+            this.customTabControl7.DisplayStyleProvider.Radius = 3;
+            this.customTabControl7.DisplayStyleProvider.ShowTabCloser = true;
+            this.customTabControl7.DisplayStyleProvider.TextColor = System.Drawing.Color.White;
+            this.customTabControl7.DisplayStyleProvider.TextColorDisabled = System.Drawing.Color.WhiteSmoke;
+            this.customTabControl7.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
+            this.customTabControl7.HotTrack = true;
+            this.customTabControl7.Location = new System.Drawing.Point(7, 271);
+            this.customTabControl7.Name = "customTabControl7";
+            this.customTabControl7.SelectedIndex = 0;
+            this.customTabControl7.Size = new System.Drawing.Size(200, 100);
+            this.customTabControl7.TabIndex = 10;
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Location = new System.Drawing.Point(4, 27);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(192, 69);
+            this.tabPage13.TabIndex = 0;
+            this.tabPage13.Text = "tabPage13";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Location = new System.Drawing.Point(4, 27);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(192, 69);
+            this.tabPage14.TabIndex = 1;
+            this.tabPage14.Text = "tabPage14";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
             // customTabControl1
             // 
             this.customTabControl1.Controls.Add(this.tabPage1);
@@ -272,28 +452,106 @@ namespace WinTabControls.Test
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // wizardControl1
+            // customTabControl6
             // 
-            this.wizardControl1.Controls.Add(this.page5);
-            this.wizardControl1.Controls.Add(this.page6);
-            this.wizardControl1.Location = new System.Drawing.Point(698, 3);
-            this.wizardControl1.Name = "wizardControl1";
-            this.wizardControl1.Size = new System.Drawing.Size(300, 200);
-            this.wizardControl1.TabIndex = 4;
+            this.customTabControl6.Controls.Add(this.tabPage11);
+            this.customTabControl6.Controls.Add(this.tabPage12);
+            this.customTabControl6.DisplayStyle = System.Windows.Forms.TabStyle.IE8;
             // 
-            // page5
             // 
-            this.page5.Location = new System.Drawing.Point(1, 1);
-            this.page5.Name = "page5";
-            this.page5.Size = new System.Drawing.Size(298, 148);
-            this.page5.Text = "Page 1";
             // 
-            // page6
+            this.customTabControl6.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl6.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl6.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
+            this.customTabControl6.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
+            this.customTabControl6.DisplayStyleProvider.CloserColorActive = System.Drawing.Color.Red;
+            this.customTabControl6.DisplayStyleProvider.FocusTrack = false;
+            this.customTabControl6.DisplayStyleProvider.HotTrack = true;
+            this.customTabControl6.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customTabControl6.DisplayStyleProvider.Opacity = 1F;
+            this.customTabControl6.DisplayStyleProvider.Overlap = 0;
+            this.customTabControl6.DisplayStyleProvider.Padding = new System.Drawing.Point(6, 5);
+            this.customTabControl6.DisplayStyleProvider.Radius = 3;
+            this.customTabControl6.DisplayStyleProvider.ShowTabCloser = true;
+            this.customTabControl6.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
+            this.customTabControl6.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl6.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
+            this.customTabControl6.HotTrack = true;
+            this.customTabControl6.Location = new System.Drawing.Point(457, 130);
+            this.customTabControl6.Name = "customTabControl6";
+            this.customTabControl6.SelectedIndex = 0;
+            this.customTabControl6.Size = new System.Drawing.Size(200, 100);
+            this.customTabControl6.TabIndex = 9;
             // 
-            this.page6.Location = new System.Drawing.Point(1, 1);
-            this.page6.Name = "page6";
-            this.page6.Size = new System.Drawing.Size(298, 148);
-            this.page6.Text = "Page 2";
+            // tabPage11
+            // 
+            this.tabPage11.Location = new System.Drawing.Point(4, 27);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(192, 69);
+            this.tabPage11.TabIndex = 0;
+            this.tabPage11.Text = "tabPage11";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Location = new System.Drawing.Point(4, 27);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(192, 69);
+            this.tabPage12.TabIndex = 1;
+            this.tabPage12.Text = "tabPage12";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // customTabControl4
+            // 
+            this.customTabControl4.Controls.Add(this.tabPage7);
+            this.customTabControl4.Controls.Add(this.tabPage8);
+            this.customTabControl4.DisplayStyle = System.Windows.Forms.TabStyle.Angled;
+            // 
+            // 
+            // 
+            this.customTabControl4.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl4.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl4.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
+            this.customTabControl4.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
+            this.customTabControl4.DisplayStyleProvider.FocusTrack = false;
+            this.customTabControl4.DisplayStyleProvider.HotTrack = true;
+            this.customTabControl4.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.customTabControl4.DisplayStyleProvider.Opacity = 1F;
+            this.customTabControl4.DisplayStyleProvider.Overlap = 7;
+            this.customTabControl4.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
+            this.customTabControl4.DisplayStyleProvider.Radius = 10;
+            this.customTabControl4.DisplayStyleProvider.ShowTabCloser = false;
+            this.customTabControl4.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
+            this.customTabControl4.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl4.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
+            this.customTabControl4.HotTrack = true;
+            this.customTabControl4.Location = new System.Drawing.Point(3, 134);
+            this.customTabControl4.Name = "customTabControl4";
+            this.customTabControl4.SelectedIndex = 0;
+            this.customTabControl4.Size = new System.Drawing.Size(200, 100);
+            this.customTabControl4.TabIndex = 7;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 23);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(192, 73);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 23);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(192, 73);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // customTabControl2
             // 
@@ -394,56 +652,6 @@ namespace WinTabControls.Test
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // customTabControl4
-            // 
-            this.customTabControl4.Controls.Add(this.tabPage7);
-            this.customTabControl4.Controls.Add(this.tabPage8);
-            this.customTabControl4.DisplayStyle = System.Windows.Forms.TabStyle.Angled;
-            // 
-            // 
-            // 
-            this.customTabControl4.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl4.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl4.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
-            this.customTabControl4.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
-            this.customTabControl4.DisplayStyleProvider.FocusTrack = false;
-            this.customTabControl4.DisplayStyleProvider.HotTrack = true;
-            this.customTabControl4.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.customTabControl4.DisplayStyleProvider.Opacity = 1F;
-            this.customTabControl4.DisplayStyleProvider.Overlap = 7;
-            this.customTabControl4.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
-            this.customTabControl4.DisplayStyleProvider.Radius = 10;
-            this.customTabControl4.DisplayStyleProvider.ShowTabCloser = false;
-            this.customTabControl4.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
-            this.customTabControl4.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl4.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
-            this.customTabControl4.HotTrack = true;
-            this.customTabControl4.Location = new System.Drawing.Point(3, 134);
-            this.customTabControl4.Name = "customTabControl4";
-            this.customTabControl4.SelectedIndex = 0;
-            this.customTabControl4.Size = new System.Drawing.Size(200, 100);
-            this.customTabControl4.TabIndex = 7;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 23);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(192, 73);
-            this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 23);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(192, 73);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
             // customTabControl5
             // 
             this.customTabControl5.Controls.Add(this.tabPage9);
@@ -495,178 +703,6 @@ namespace WinTabControls.Test
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
-            // customTabControl6
-            // 
-            this.customTabControl6.Controls.Add(this.tabPage11);
-            this.customTabControl6.Controls.Add(this.tabPage12);
-            this.customTabControl6.DisplayStyle = System.Windows.Forms.TabStyle.IE8;
-            // 
-            // 
-            // 
-            this.customTabControl6.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl6.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl6.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
-            this.customTabControl6.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
-            this.customTabControl6.DisplayStyleProvider.CloserColorActive = System.Drawing.Color.Red;
-            this.customTabControl6.DisplayStyleProvider.FocusTrack = false;
-            this.customTabControl6.DisplayStyleProvider.HotTrack = true;
-            this.customTabControl6.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customTabControl6.DisplayStyleProvider.Opacity = 1F;
-            this.customTabControl6.DisplayStyleProvider.Overlap = 0;
-            this.customTabControl6.DisplayStyleProvider.Padding = new System.Drawing.Point(6, 5);
-            this.customTabControl6.DisplayStyleProvider.Radius = 3;
-            this.customTabControl6.DisplayStyleProvider.ShowTabCloser = true;
-            this.customTabControl6.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
-            this.customTabControl6.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl6.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
-            this.customTabControl6.HotTrack = true;
-            this.customTabControl6.Location = new System.Drawing.Point(457, 130);
-            this.customTabControl6.Name = "customTabControl6";
-            this.customTabControl6.SelectedIndex = 0;
-            this.customTabControl6.Size = new System.Drawing.Size(200, 100);
-            this.customTabControl6.TabIndex = 9;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Location = new System.Drawing.Point(4, 27);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(192, 69);
-            this.tabPage11.TabIndex = 0;
-            this.tabPage11.Text = "tabPage11";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Location = new System.Drawing.Point(4, 27);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(192, 69);
-            this.tabPage12.TabIndex = 1;
-            this.tabPage12.Text = "tabPage12";
-            this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.AutoScroll = true;
-            this.splitContainer1.Panel1.Controls.Add(this.tabControl3);
-            this.splitContainer1.Panel1.Controls.Add(this.faTabStrip1);
-            this.splitContainer1.Panel1.Controls.Add(this.wizardControl1);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1008, 730);
-            this.splitContainer1.SplitterDistance = 220;
-            this.splitContainer1.TabIndex = 10;
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.AutoScroll = true;
-            this.splitContainer2.Panel1.Controls.Add(this.tabControl2);
-            this.splitContainer2.Panel1.Controls.Add(this.tabControl1);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.AutoScroll = true;
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl7);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl1);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl6);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl4);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl2);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl3);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl5);
-            this.splitContainer2.Size = new System.Drawing.Size(1008, 506);
-            this.splitContainer2.SplitterDistance = 319;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tab8);
-            this.tabControl2.Controls.Add(this.tab9);
-            this.tabControl2.Location = new System.Drawing.Point(3, 259);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.Size = new System.Drawing.Size(300, 200);
-            this.tabControl2.TabIndex = 3;
-            this.tabControl2.TabLocation = ((Manina.Windows.Forms.TabLocation)((Manina.Windows.Forms.TabLocation.Far | Manina.Windows.Forms.TabLocation.Bottom)));
-            // 
-            // tab8
-            // 
-            this.tab8.Location = new System.Drawing.Point(1, 1);
-            this.tab8.Name = "tab8";
-            this.tab8.Size = new System.Drawing.Size(298, 179);
-            this.tab8.Text = "tab8";
-            // 
-            // tab9
-            // 
-            this.tab9.Location = new System.Drawing.Point(1, 20);
-            this.tab9.Name = "tab9";
-            this.tab9.Size = new System.Drawing.Size(298, 179);
-            this.tab9.Text = "tab9";
-            // 
-            // customTabControl7
-            // 
-            this.customTabControl7.Controls.Add(this.tabPage13);
-            this.customTabControl7.Controls.Add(this.tabPage14);
-            this.customTabControl7.DisplayStyle = System.Windows.Forms.TabStyle.VS2010;
-            // 
-            // 
-            // 
-            this.customTabControl7.DisplayStyleProvider.BorderColor = System.Drawing.Color.Transparent;
-            this.customTabControl7.DisplayStyleProvider.BorderColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
-            this.customTabControl7.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
-            this.customTabControl7.DisplayStyleProvider.CloserColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(99)))), ((int)(((byte)(61)))));
-            this.customTabControl7.DisplayStyleProvider.FocusTrack = false;
-            this.customTabControl7.DisplayStyleProvider.HotTrack = true;
-            this.customTabControl7.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customTabControl7.DisplayStyleProvider.Opacity = 1F;
-            this.customTabControl7.DisplayStyleProvider.Overlap = 0;
-            this.customTabControl7.DisplayStyleProvider.Padding = new System.Drawing.Point(6, 5);
-            this.customTabControl7.DisplayStyleProvider.Radius = 3;
-            this.customTabControl7.DisplayStyleProvider.ShowTabCloser = true;
-            this.customTabControl7.DisplayStyleProvider.TextColor = System.Drawing.Color.White;
-            this.customTabControl7.DisplayStyleProvider.TextColorDisabled = System.Drawing.Color.WhiteSmoke;
-            this.customTabControl7.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
-            this.customTabControl7.HotTrack = true;
-            this.customTabControl7.Location = new System.Drawing.Point(7, 271);
-            this.customTabControl7.Name = "customTabControl7";
-            this.customTabControl7.SelectedIndex = 0;
-            this.customTabControl7.Size = new System.Drawing.Size(200, 100);
-            this.customTabControl7.TabIndex = 10;
-            // 
-            // tabPage13
-            // 
-            this.tabPage13.Location = new System.Drawing.Point(4, 27);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(192, 69);
-            this.tabPage13.TabIndex = 0;
-            this.tabPage13.Text = "tabPage13";
-            this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.Location = new System.Drawing.Point(4, 27);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(192, 69);
-            this.tabPage14.TabIndex = 1;
-            this.tabPage14.Text = "tabPage14";
-            this.tabPage14.UseVisualStyleBackColor = true;
-            // 
             // page7
             // 
             this.page7.Location = new System.Drawing.Point(1, 1);
@@ -695,37 +731,19 @@ namespace WinTabControls.Test
             this.page10.Size = new System.Drawing.Size(298, 198);
             this.page10.Text = "Page 5";
             // 
-            // pictureBox1
+            // page1
             // 
-            this.pictureBox1.Image = global::WinTabControls.Test.Properties.Resources.clock;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.page1.Location = new System.Drawing.Point(1, 1);
+            this.page1.Name = "page1";
+            this.page1.Size = new System.Drawing.Size(298, 148);
+            this.page1.Text = "Page 3";
             // 
-            // tabControl3
+            // page2
             // 
-            this.tabControl3.Controls.Add(this.tab10);
-            this.tabControl3.Controls.Add(this.tab11);
-            this.tabControl3.Location = new System.Drawing.Point(383, 5);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.Size = new System.Drawing.Size(300, 198);
-            this.tabControl3.TabIndex = 5;
-            // 
-            // tab10
-            // 
-            this.tab10.Location = new System.Drawing.Point(1, 20);
-            this.tab10.Name = "tab10";
-            this.tab10.Size = new System.Drawing.Size(298, 177);
-            this.tab10.Text = "tab10";
-            // 
-            // tab11
-            // 
-            this.tab11.Location = new System.Drawing.Point(1, 20);
-            this.tab11.Name = "tab11";
-            this.tab11.Size = new System.Drawing.Size(298, 177);
-            this.tab11.Text = "tab11";
+            this.page2.Location = new System.Drawing.Point(1, 1);
+            this.page2.Name = "page2";
+            this.page2.Size = new System.Drawing.Size(298, 148);
+            this.page2.Text = "Page 4";
             // 
             // Form1
             // 
@@ -736,17 +754,6 @@ namespace WinTabControls.Test
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.faTabStrip1)).EndInit();
-            this.faTabStrip1.ResumeLayout(false);
-            this.faTabStripItem1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.customTabControl1.ResumeLayout(false);
-            this.wizardControl1.ResumeLayout(false);
-            this.customTabControl2.ResumeLayout(false);
-            this.customTabControl3.ResumeLayout(false);
-            this.customTabControl4.ResumeLayout(false);
-            this.customTabControl5.ResumeLayout(false);
-            this.customTabControl6.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -755,10 +762,21 @@ namespace WinTabControls.Test
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.customTabControl7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.faTabStrip1)).EndInit();
+            this.faTabStrip1.ResumeLayout(false);
+            this.faTabStripItem1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.wizardControl1.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.customTabControl7.ResumeLayout(false);
+            this.customTabControl1.ResumeLayout(false);
+            this.customTabControl6.ResumeLayout(false);
+            this.customTabControl4.ResumeLayout(false);
+            this.customTabControl2.ResumeLayout(false);
+            this.customTabControl3.ResumeLayout(false);
+            this.customTabControl5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -816,6 +834,8 @@ namespace WinTabControls.Test
         private Manina.Windows.Forms.TabControl tabControl3;
         private Manina.Windows.Forms.Tab tab10;
         private Manina.Windows.Forms.Tab tab11;
+        private Manina.Windows.Forms.Page page1;
+        private Manina.Windows.Forms.Page page2;
     }
 }
 

@@ -19,11 +19,16 @@ namespace WinTabControls.Test
             this.wizardControl1.NextButtonText = "下一页";
             this.wizardControl1.NextButtonVisible = true;
             //
+            
+        }
+
+        protected override void OnShown(EventArgs e) {
+            base.OnShown(e);
+            //
             new WizardControlTest.WizardControl_TestForm().Show();
             new TestApp.PagedControl_TestForm().Show();
             new TabControlTest.TabControl_TestForm().Show();
-        }
 
-        
+        }
     }
 }
