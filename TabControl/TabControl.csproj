@@ -147,6 +147,9 @@
     <Compile Include="Tab.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WizardControl\WizardControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -172,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PagedControl\PagedControl.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WizardControl\WizardControl.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

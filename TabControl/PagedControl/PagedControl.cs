@@ -10,6 +10,7 @@ namespace Manina.Windows.Forms
     [Docking(DockingBehavior.Ask)]
     [DefaultEvent("PageChanged")]
     [DefaultProperty("SelectedPage")]
+    [Description("使用TabControl")]
     public partial class PagedControl : Control
     {
         #region Virtual Functions for Events
