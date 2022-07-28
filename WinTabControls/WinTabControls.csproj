@@ -197,6 +197,10 @@
       <Link>TabPagedControl\TabControl.cs</Link>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="..\TabControl\WizardControl\WizardControl.cs">
+      <Link>TabPagedControl\WizardControl\WizardControl.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="..\TabStrip\BaseClasses\BaseStyledPanel.cs">
       <Link>TabStrip\BaseClasses\BaseStyledPanel.cs</Link>
       <SubType>Component</SubType>
@@ -275,6 +279,9 @@
     </Content>
     <Content Include="..\TabControl\TabControl.bmp">
       <Link>TabPagedControl\TabControl.bmp</Link>
+    </Content>
+    <Content Include="..\TabControl\WizardControl\WizardControl.bmp">
+      <Link>TabPagedControl\WizardControl\WizardControl.bmp</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
