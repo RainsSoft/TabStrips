@@ -29,7 +29,7 @@ namespace FarsiLibrary.Win {
       
         private const int DEF_GLYPH_WIDTH = DEF_HEADER_HEIGHT*2;        
         private const int DEF_TOOLBAR_BUTTON_HEIGHT =  DEF_HEADER_HEIGHT- 3;
-        private const int DEF_TAB_ALLOW_DRAW_BOUNDARY = 20;
+        private const int DEF_TAB_ALLOW_DRAW_BOUNDARY = 24;
         private const int DEF_TAB_TEXT_WIDTH_EXTEND = 30;//20;
         #endregion
 
@@ -37,6 +37,7 @@ namespace FarsiLibrary.Win {
 
         public event TabStripItemClosingHandler TabStripItemClosing;
         public event TabStripItemChangedHandler TabStripItemSelectionChanged;
+        public event TabStripItemChangedHandler TabStripItemMoveToZero;
         public event HandledEventHandler MenuItemsLoading;
         public event EventHandler MenuItemsLoaded;
         public event EventHandler TabStripItemClosed;
@@ -479,7 +480,7 @@ namespace FarsiLibrary.Win {
 
         private bool AllowDraw(FATabStripItem item) {
             bool result = true;
-            int boundary = DEF_TAB_ALLOW_DRAW_BOUNDARY;
+            int boundary = DEF_TAB_ALLOW_DRAW_BOUNDARY- DEF_GLYPH_WIDTH;
             if(RightToLeft == RightToLeft.No) {
                 //if(item.StripRect.Right >= stripButtonRect.Width)
                 //    result = false;
@@ -834,12 +835,19 @@ namespace FarsiLibrary.Win {
                             break;
                         }
                     }
+                    int moveC = 0;
                     for(int i = len-1; i>=index; i--) {
                         var item = Items[len-1];
                         Items.MoveTo(0, item);
+                        moveC++;
                     }
                     //Items.MoveTo(0, selectedItem);
                     Invalidate();
+                    for(int i = moveC-1; i>=0; i--) {
+                        if(TabStripItemMoveToZero != null) {
+                            TabStripItemMoveToZero(new TabStripItemChangedEventArgs(Items[i], FATabStripItemChangeTypes.SelectionChanged));
+                        }
+                    }
                 }
 
                 OnTabStripItemChanged(
