@@ -7,15 +7,17 @@ Building a TabControl consists of building two controls: a TabControl itself, wh
 The Visual Studio TabControl slightly differs from a normal tab control, because it only shows as much TabPages as fits the width of the control. All the other TabPages are available via a context menu appearing by clicking the glyph icon. Selecting a TabPage from the menu brings it to position 0 of the TabPageCollection, so that it appears as the first TabPage.
 
 http://www.codeproject.com/Articles/13902/TabStrips-A-TabControl-in-the-Visual-Studio-2005-w
+''' csharp
 
-PageControl:
+...
+## PageControl:
 https://github.com/oozcitak/PagedControl
 ![img](https://raw.githubusercontent.com/RainsSoft/TabStrips/master/pagecontrol.png "pagecontrol.png")
-TabControl:
+## TabControl:
 https://github.com/oozcitak/TabControl
 
 ![样例图片](https://raw.githubusercontent.com/RainsSoft/TabStrips/master/tabcontrol.png "tabcontrol.png")
-CustomTab:
+## CustomTab:
 This project is just a modified version of Painting Your Own Tabs - Second Edition made by The Man from U.N.C.L.E.
 https://www.codeproject.com/Articles/91387/Painting-Your-Own-Tabs-Second-Edition-2
 
