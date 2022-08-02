@@ -19,4 +19,4 @@ https://www.codeproject.com/Articles/91387/Painting-Your-Own-Tabs-Second-Edition
 
 By no means am I the creator of this source code.
 TabStrips 原始控件库很久没有更新了，这里是为了适应自己的项目做了一些改进与美化
-![图1](https://github.com/RainsSoft/TabStrips/blob/master/demo.png)
+![demo](https://raw.githubusercontent.com/RainsSoft/TabStrips/master/demo.png)
