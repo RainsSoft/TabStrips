@@ -10,13 +10,14 @@ http://www.codeproject.com/Articles/13902/TabStrips-A-TabControl-in-the-Visual-S
 
 PageControl:
 https://github.com/oozcitak/PagedControl
+![img](https://raw.githubusercontent.com/RainsSoft/TabStrips/master/pagecontrol.png)
 TabControl:
 https://github.com/oozcitak/TabControl
-
+<img src="https://raw.githubusercontent.com/RainsSoft/TabStrips/master/tabcontrol.png">
 CustomTab:
 This project is just a modified version of Painting Your Own Tabs - Second Edition made by The Man from U.N.C.L.E.
 https://www.codeproject.com/Articles/91387/Painting-Your-Own-Tabs-Second-Edition-2
 
 By no means am I the creator of this source code.
 TabStrips 原始控件库很久没有更新了，这里是为了适应自己的项目做了一些改进与美化
-![demo](https://raw.githubusercontent.com/RainsSoft/TabStrips/master/demo.png)
+![demo] (https://raw.githubusercontent.com/RainsSoft/TabStrips/master/demo.png)
