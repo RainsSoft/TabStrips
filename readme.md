@@ -1,5 +1,7 @@
 # WinTabControls
 ![样例图片](https://raw.githubusercontent.com/RainsSoft/TabStrips/master/demo.png "demo.png")
+     <br/>[nuget download](https://www.nuget.org/packages/WinTabControls)
+     <br/>[github download](https://github.com/RainsSoft/TabStrips/)
 ## TabStrips: A TabControl in the Visual Studio 2005 way!
 
     Besides all the new features of Visual Studio, there is a distinct TabControl with a new style like no other. The code here tries to build up a control which behaves like the tab pages of VS.NET 2005.
