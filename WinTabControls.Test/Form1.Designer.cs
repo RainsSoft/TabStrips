@@ -27,10 +27,6 @@ namespace WinTabControls.Test
         /// </summary>
         private void InitializeComponent() {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.tabControl3 = new Manina.Windows.Forms.TabControl();
-            this.tab10 = new Manina.Windows.Forms.Tab();
-            this.tab11 = new Manina.Windows.Forms.Tab();
             this.faTabStrip1 = new FarsiLibrary.Win.FATabStrip();
             this.faTabStripItem1 = new FarsiLibrary.Win.FATabStripItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,6 +37,9 @@ namespace WinTabControls.Test
             this.wizardControl1 = new Manina.Windows.Forms.WizardControl();
             this.page5 = new Manina.Windows.Forms.Page();
             this.page6 = new Manina.Windows.Forms.Page();
+            this.page1 = new Manina.Windows.Forms.Page();
+            this.page2 = new Manina.Windows.Forms.Page();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tabControl2 = new Manina.Windows.Forms.TabControl();
             this.tab8 = new Manina.Windows.Forms.Tab();
             this.tab9 = new Manina.Windows.Forms.Tab();
@@ -77,22 +76,26 @@ namespace WinTabControls.Test
             this.page8 = new Manina.Windows.Forms.Page();
             this.page9 = new Manina.Windows.Forms.Page();
             this.page10 = new Manina.Windows.Forms.Page();
-            this.page1 = new Manina.Windows.Forms.Page();
-            this.page2 = new Manina.Windows.Forms.Page();
+            this.faTabStrip2 = new FarsiLibrary.Win.FATabStrip();
+            this.faTabStripItem6 = new FarsiLibrary.Win.FATabStripItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.faTabStripItem7 = new FarsiLibrary.Win.FATabStripItem();
+            this.faTabStripItem8 = new FarsiLibrary.Win.FATabStripItem();
+            this.faTabStripItem9 = new FarsiLibrary.Win.FATabStripItem();
+            this.faTabStripItem10 = new FarsiLibrary.Win.FATabStripItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            this.tabControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.faTabStrip1)).BeginInit();
             this.faTabStrip1.SuspendLayout();
             this.faTabStripItem1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.wizardControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.customTabControl7.SuspendLayout();
@@ -102,6 +105,10 @@ namespace WinTabControls.Test
             this.customTabControl2.SuspendLayout();
             this.customTabControl3.SuspendLayout();
             this.customTabControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.faTabStrip2)).BeginInit();
+            this.faTabStrip2.SuspendLayout();
+            this.faTabStripItem6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -114,69 +121,19 @@ namespace WinTabControls.Test
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.AutoScroll = true;
-            this.splitContainer1.Panel1.Controls.Add(this.tabControl3);
+            this.splitContainer1.Panel1.Controls.Add(this.faTabStrip2);
             this.splitContainer1.Panel1.Controls.Add(this.faTabStrip1);
             this.splitContainer1.Panel1.Controls.Add(this.wizardControl1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1008, 730);
-            this.splitContainer1.SplitterDistance = 220;
+            this.splitContainer1.Size = new System.Drawing.Size(1024, 768);
+            this.splitContainer1.SplitterDistance = 246;
             this.splitContainer1.TabIndex = 10;
             // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.AutoScroll = true;
-            this.splitContainer2.Panel1.Controls.Add(this.tabControl2);
-            this.splitContainer2.Panel1.Controls.Add(this.tabControl1);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.AutoScroll = true;
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl7);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl1);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl6);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl4);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl2);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl3);
-            this.splitContainer2.Panel2.Controls.Add(this.customTabControl5);
-            this.splitContainer2.Size = new System.Drawing.Size(1008, 506);
-            this.splitContainer2.SplitterDistance = 319;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tab10);
-            this.tabControl3.Controls.Add(this.tab11);
-            this.tabControl3.Location = new System.Drawing.Point(383, 5);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.Size = new System.Drawing.Size(300, 198);
-            this.tabControl3.TabIndex = 5;
-            // 
-            // tab10
-            // 
-            this.tab10.Location = new System.Drawing.Point(1, 20);
-            this.tab10.Name = "tab10";
-            this.tab10.Size = new System.Drawing.Size(298, 177);
-            this.tab10.Text = "tab10";
-            // 
-            // tab11
-            // 
-            this.tab11.Location = new System.Drawing.Point(1, 20);
-            this.tab11.Name = "tab11";
-            this.tab11.Size = new System.Drawing.Size(298, 177);
-            this.tab11.Text = "tab11";
-            // 
             // faTabStrip1
-            // 
-            this.faTabStrip1.AlwayDrawToolBarRegion = false;
+            //        
             this.faTabStrip1.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.faTabStrip1.Items.AddRange(new FarsiLibrary.Win.FATabStripItem[] {
             this.faTabStripItem1,
@@ -246,16 +203,16 @@ namespace WinTabControls.Test
             this.wizardControl1.Controls.Add(this.page6);
             this.wizardControl1.Controls.Add(this.page1);
             this.wizardControl1.Controls.Add(this.page2);
-            this.wizardControl1.Location = new System.Drawing.Point(698, 3);
+            this.wizardControl1.Location = new System.Drawing.Point(780, 23);
             this.wizardControl1.Name = "wizardControl1";
-            this.wizardControl1.Size = new System.Drawing.Size(300, 200);
+            this.wizardControl1.Size = new System.Drawing.Size(232, 179);
             this.wizardControl1.TabIndex = 4;
             // 
             // page5
             // 
             this.page5.Location = new System.Drawing.Point(1, 1);
             this.page5.Name = "page5";
-            this.page5.Size = new System.Drawing.Size(298, 148);
+            this.page5.Size = new System.Drawing.Size(230, 127);
             this.page5.Text = "Page 1";
             // 
             // page6
@@ -264,6 +221,46 @@ namespace WinTabControls.Test
             this.page6.Name = "page6";
             this.page6.Size = new System.Drawing.Size(298, 148);
             this.page6.Text = "Page 2";
+            // 
+            // page1
+            // 
+            this.page1.Location = new System.Drawing.Point(1, 1);
+            this.page1.Name = "page1";
+            this.page1.Size = new System.Drawing.Size(298, 148);
+            this.page1.Text = "Page 3";
+            // 
+            // page2
+            // 
+            this.page2.Location = new System.Drawing.Point(1, 1);
+            this.page2.Name = "page2";
+            this.page2.Size = new System.Drawing.Size(298, 148);
+            this.page2.Text = "Page 4";
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.AutoScroll = true;
+            this.splitContainer2.Panel1.Controls.Add(this.tabControl2);
+            this.splitContainer2.Panel1.Controls.Add(this.tabControl1);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.AutoScroll = true;
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl7);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl1);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl6);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl4);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl2);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl3);
+            this.splitContainer2.Panel2.Controls.Add(this.customTabControl5);
+            this.splitContainer2.Size = new System.Drawing.Size(1024, 518);
+            this.splitContainer2.SplitterDistance = 324;
+            this.splitContainer2.TabIndex = 0;
             // 
             // tabControl2
             // 
@@ -731,25 +728,87 @@ namespace WinTabControls.Test
             this.page10.Size = new System.Drawing.Size(298, 198);
             this.page10.Text = "Page 5";
             // 
-            // page1
+            // faTabStrip2
             // 
-            this.page1.Location = new System.Drawing.Point(1, 1);
-            this.page1.Name = "page1";
-            this.page1.Size = new System.Drawing.Size(298, 148);
-            this.page1.Text = "Page 3";
+            this.faTabStrip2.AlwayDrawToolBarRegion = false;
+            this.faTabStrip2.AlwaysShowClose = false;
+            this.faTabStrip2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.faTabStrip2.Items.AddRange(new FarsiLibrary.Win.FATabStripItem[] {
+            this.faTabStripItem6,
+            this.faTabStripItem7,
+            this.faTabStripItem8,
+            this.faTabStripItem9,
+            this.faTabStripItem10});
+            this.faTabStrip2.Location = new System.Drawing.Point(380, 3);
+            this.faTabStrip2.Name = "faTabStrip2";
+            this.faTabStrip2.SelectedItem = this.faTabStripItem6;
+            this.faTabStrip2.Size = new System.Drawing.Size(350, 200);
+            this.faTabStrip2.TabIndex = 0;
+            this.faTabStrip2.Text = "faTabStrip1";
+            this.faTabStrip2.AlwayDrawBorderLine =false;   
+            this.faTabStrip2.AlwayDrawToolBarRegion = true;
+            this.faTabStrip2.AlwaysShowClose = false;
+            this.faTabStrip2.AlwaysShowMenuGlyph = false;
             // 
-            // page2
+            // faTabStripItem6
             // 
-            this.page2.Location = new System.Drawing.Point(1, 1);
-            this.page2.Name = "page2";
-            this.page2.Size = new System.Drawing.Size(298, 148);
-            this.page2.Text = "Page 4";
+            this.faTabStripItem6.Controls.Add(this.pictureBox2);
+            this.faTabStripItem6.IsDrawn = true;
+            this.faTabStripItem6.Name = "faTabStripItem6";
+            this.faTabStripItem6.Selected = true;
+            this.faTabStripItem6.Size = new System.Drawing.Size(348, 174);
+            this.faTabStripItem6.TabIndex = 0;
+            this.faTabStripItem6.Title = "TabStrip Page 1";
+            this.faTabStripItem6.CanClose = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WinTabControls.Test.Properties.Resources.clock;
+            this.pictureBox2.Location = new System.Drawing.Point(53, 49);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // faTabStripItem7
+            // 
+            this.faTabStripItem7.IsDrawn = true;
+            this.faTabStripItem7.Name = "faTabStripItem7";
+            this.faTabStripItem7.Size = new System.Drawing.Size(348, 174);
+            this.faTabStripItem7.TabIndex = 1;
+            this.faTabStripItem7.Title = "TabStrip Page 2";
+            this.faTabStripItem7.CanClose = false;
+            // 
+            // faTabStripItem8
+            // 
+            this.faTabStripItem8.IsDrawn = true;
+            this.faTabStripItem8.Name = "faTabStripItem8";
+            this.faTabStripItem8.Size = new System.Drawing.Size(348, 174);
+            this.faTabStripItem8.TabIndex = 2;
+            this.faTabStripItem8.Title = "TabStrip Page 3";
+            this.faTabStripItem8.CanClose = false;
+            // 
+            // faTabStripItem9
+            // 
+            this.faTabStripItem9.Name = "faTabStripItem9";
+            this.faTabStripItem9.Size = new System.Drawing.Size(348, 174);
+            this.faTabStripItem9.TabIndex = 3;
+            this.faTabStripItem9.Title = "TabStrip Page 4";
+            this.faTabStripItem9.CanClose = false;
+            // 
+            // faTabStripItem10
+            // 
+            this.faTabStripItem10.Name = "faTabStripItem10";
+            this.faTabStripItem10.Size = new System.Drawing.Size(348, 174);
+            this.faTabStripItem10.TabIndex = 4;
+            this.faTabStripItem10.Title = "TabStrip Page 5";
+            this.faTabStripItem10.CanClose = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1024, 768);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -758,16 +817,15 @@ namespace WinTabControls.Test
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.faTabStrip1)).EndInit();
             this.faTabStrip1.ResumeLayout(false);
             this.faTabStripItem1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.wizardControl1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.customTabControl7.ResumeLayout(false);
@@ -777,6 +835,10 @@ namespace WinTabControls.Test
             this.customTabControl2.ResumeLayout(false);
             this.customTabControl3.ResumeLayout(false);
             this.customTabControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.faTabStrip2)).EndInit();
+            this.faTabStrip2.ResumeLayout(false);
+            this.faTabStripItem6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -831,11 +893,15 @@ namespace WinTabControls.Test
         private Manina.Windows.Forms.Page page9;
         private Manina.Windows.Forms.Page page10;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Manina.Windows.Forms.TabControl tabControl3;
-        private Manina.Windows.Forms.Tab tab10;
-        private Manina.Windows.Forms.Tab tab11;
         private Manina.Windows.Forms.Page page1;
         private Manina.Windows.Forms.Page page2;
+        private FarsiLibrary.Win.FATabStrip faTabStrip2;
+        private FarsiLibrary.Win.FATabStripItem faTabStripItem6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private FarsiLibrary.Win.FATabStripItem faTabStripItem7;
+        private FarsiLibrary.Win.FATabStripItem faTabStripItem8;
+        private FarsiLibrary.Win.FATabStripItem faTabStripItem9;
+        private FarsiLibrary.Win.FATabStripItem faTabStripItem10;
     }
 }
 
